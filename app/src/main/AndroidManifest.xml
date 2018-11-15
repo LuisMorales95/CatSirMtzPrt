@@ -1,0 +1,208 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Mezda.Catastro">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        tools:ignore="GradleOverrides" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.Mezda.Catastro.VolleySingleton"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.Mezda.Catastro.activity.SignInActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.TermsConditionActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.SignUpActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.Mezda.Catastro.qrcode.SetOrigin"
+            android:hardwareAccelerated="false"
+            android:label="@string/activity_style_raster_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Screen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.ZeroQR"
+            android:hardwareAccelerated="false"
+            android:label="@string/activity_style_raster_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Screen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.fragment.ResultListFragmentqr"
+            android:hardwareAccelerated="false"
+            android:label="Lista de Rezagos Temporales"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.fragment.SetMapQR"
+            android:hardwareAccelerated="false"
+            android:label="Map"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.fragment.SetMapQR0"
+            android:hardwareAccelerated="false"
+            android:label="Map"
+            android:screenOrientation="portrait"
+            android:theme="@style/Screen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.fragment.OfflineManagerActivity"
+            android:hardwareAccelerated="false"
+            android:label="Map"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.RegisterActivity"
+            android:hardwareAccelerated="false"
+            android:label="Nuevo Levantamiento"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.RegisterActivityMod"
+            android:hardwareAccelerated="false"
+            android:label="Modificacion de Levantamiento"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.CalculoActivity"
+            android:hardwareAccelerated="false"
+            android:label="Calculo Predio"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Mezda.Catastro.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.HomeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.Mezda.Catastro.activity.VerificationActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.ForgetPasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.ProfileUpdateActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.ChangePasswordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.PostBusinessActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.Mezda.Catastro.activity.MapActivity"
+            android:screenOrientation="portrait" />
+        <!-- Telemetry -->
+
+        <service
+            android:name="com.mapbox.services.android.telemetry.service.TelemetryService"
+            tools:ignore="WrongManifestParent" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/FileProviderString"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fe2bdce766c420daa74a07dfbf58764f4b107bee"
+            />
+    </application>
+
+</manifest>

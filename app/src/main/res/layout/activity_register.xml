@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ls="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <com.Mezda.Catastro.util.FloatLabel
+                android:id="@+id/etArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:hint="Area"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/blue_button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:background="@color/bar_color"
+                android:layout_height="0.5dp" />
+
+            <com.Mezda.Catastro.util.FloatLabel
+                android:id="@+id/etAnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:hint="Antiguedad"
+                android:inputType="number"
+                android:textColorHint="@color/blue_button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:background="@color/bar_color"
+                android:layout_height="0.5dp" />
+
+            <com.Mezda.Catastro.util.FloatLabel
+                android:id="@+id/etValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:hint="Valor"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/blue_button"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:background="@color/bar_color"
+                android:layout_height="0.5dp"
+                android:visibility="gone" />
+
+            <com.Mezda.Catastro.util.FloatLabel
+                android:id="@+id/etLetra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:hint="Letra"
+                android:inputType="text"
+                android:maxLength="1"
+                android:textColorHint="@color/blue_button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_marginLeft="@dimen/value_40dp"
+                android:layout_marginRight="@dimen/value_40dp"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:background="@color/bar_color"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCity0"
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_height="120dp">
+
+                <!--       <Spinner
+                    android:id="@+id/spinnerDistrict0"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog" /> -->
+
+                <com.satsuware.usefulviews.LabelledSpinner
+                    android:id="@+id/spestconst"
+                    ls:labelText="Estado Construccion"
+                    ls:widgetColor="@color/blue_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:spinnerMode="dialog"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCity1"
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_height="120dp">
+
+                <com.satsuware.usefulviews.LabelledSpinner
+                    android:id="@+id/sptipoconst"
+                    ls:labelText="Tipo Construccion"
+                    ls:widgetColor="@color/blue_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:spinnerMode="dialog"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCity2"
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_height="120dp">
+
+                <com.satsuware.usefulviews.LabelledSpinner
+                    android:id="@+id/sptermconst"
+                    ls:labelText="Termino Construccion"
+                    ls:widgetColor="@color/blue_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="26sp"
+                    android:spinnerMode="dialog"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnSignUp"
+                style="@style/btnDeepSelectionBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:fontFamily="sans-serif"
+                android:text="Agregar"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

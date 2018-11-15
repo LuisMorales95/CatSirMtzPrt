@@ -1,0 +1,138 @@
+<resources>
+
+    <string name="app_name">Catastro</string>
+    <string name="FileProviderString">com.Mezda.Catastro.android.fileprovider</string>
+
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_string">Welcome to</string>
+    <string name="terms_condition_headings"><![CDATA[Terms & Conditions]]></string>
+    <string name="terms_condition_text">YOUR ACCEPTANCE OF THIS AGREEMENT: This is an agreement between you and Finder, a company incorporated with its registered office at Building: 20, Plot No-1/A, J-Block, Baridhara Residential Area (Near The American Center), 1212 that governs your use of the search services offered by Finder through its website www.audacityit.com. This is an agreement between you and Finder, a company incorporated with its registered office at Building: 20, Plot No-1/A, J-Block, Baridhara Residential Area (Near The American Center), 1212 that governs your use of the search services offered by Finder through its website www.audacityit.com. This is an agreement between you and Finder, a company incorporated with its registered office at Building: 20, Plot No-1/A, J-Block, Baridhara Residential Area (Near The American Center), 1212 that governs your use of the search services offered by Finder through its website www.audacityit.com.</string>
+    <string name="tc_accept"><u>Recordar Credencial</u></string>
+    <string name="continue_string">Continue</string>
+    <string name="promo_text">Company promo text will go here with dummy text lorem ipsum</string>
+    <string name="sign_up_string">Sign Up</string>
+    <string name="see_first_string">See First</string>
+    <string name="have_account_string"><u>Already have an account?</u></string>
+    <string name="hint_phone_number">Usuario</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_retype_password">Retype Password</string>
+    <string name="male">\u0020\u0020Male</string>
+    <string name="female">\u0020\u0020Female</string>
+    <string name="sign_in_string">Iniciar Sesión</string>
+    <string name="forget_password_string"><u>Olvidaste tu Contraseña?</u></string>
+    <string name="new_user_string"><u>Are you new user?</u></string>
+    <string name="call_now_string">Call Now</string>
+    <string name="post_ad_string">Advertise with Us</string>
+    <string name="post_business_string">Post a Business</string>
+    <string name="profile_string">Profile</string>
+    <string name="search_hint">Find here (eg: Audacity IT Solutions Limited)</string>
+    <string name="update_string">Update</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_company_name">Company Name*</string>
+    <string name="hint_contact_person">Contact Person*</string>
+    <string name="hint_district_name">District</string>
+    <string name="hint_mobile_number">Usuario</string>
+    <string name="submit_string">Enviar</string>
+    <string name="search_filter_title">Filter by location</string>
+    <string name="gallery_string">Gallery</string>
+    <string name="web_string">Web</string>
+    <string name="map_string">Map</string>
+    <string name="rate_string">Rate Now</string>
+    <string name="no_data">N\\A</string>
+    <string name="apply_string">Apply</string>
+    <string name="you_string">You</string>
+    <string name="away_string">away</string>
+    <string name="distance_demo_string">15KM</string>
+    <string name="verification_string">We have sent a verification code to your mobile number.</string>
+    <string name="verification_hint">Verification code</string>
+    <string name="resend_code_string"><u>Resend Verification Code</u></string>
+    <string name="verification_heading">Verification</string>
+    <string name="verification_body">Your verification has been completed</string>
+    <string name="code_resend_heading">Code Resend</string>
+    <string name="code_resend_body">A new verification code will be sent</string>
+    <string name="hint_mobile_number_">Usuario</string>
+    <string name="reset_code">Reset</string>
+    <string name="password_reset_heading">Password Reset</string>
+    <string name="password_reset_body">Your password has been reset</string>
+    <string name="hint_comment">Comment</string>
+    <string name="comment_hint">Comment</string>
+    <string name="empty_filed">Filed is empty</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="invalid_password">Password must be of 6 character</string>
+    <string name="password_mismatch">Password doesn\'t match</string>
+    <string name="mobile_country_code">880</string>
+    <string name="no_website">Website is not available</string>
+    <string name="no_email">No email address</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_internet_text"><![CDATA[Please check your internet connection & try again]]></string>
+    <string name="retry_string">Reintentar</string>
+    <string name="exit_string">Exit</string>
+    <string name="exit_heading">Cerrar Sesión</string>
+    <string name="exit_text">Al salir de sesión los datos guardados seran borrados. \n
+        Deseas salir de la sesión?</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="sign_in_text">You have to sign in first!</string>
+    <string name="location_not_found">Location unavailable</string>
+    <string name="sign_in_failure">Invalid mobile number or password</string>
+    <string name="error_text">Server error! Please try again later.</string>
+    <string name="profile_update_success">Profile updated successfully</string>
+    <string name="profile_update_failure">Profile update failed</string>
+    <string name="phone_dialog_title">Make a Call</string>
+    <string name="no_value">No result found</string>
+    <string name="no_gps">No GPS!</string>
+    <string name="no_gps_message">Please turn on gps for map feature</string>
+    <string name="no_gps_positive_text">Turn on</string>
+    <string name="no_gps_negative_text">Not now</string>
+    <string name="dummy_comment">I enjoyed the card aspect and the gameplay, but was left at the loading screen after finishing the 2nd mission (1st after the tutorial)
+        . No way to contact support, even after rebooting the game.</string>
+    <string name="yes_string">Si</string>
+    <string name="no_string">No</string>
+    <string name="no_rating_error_string">You\'ve to rate first!</string>
+    <string name="hotline_call_text">Are you sure you want to call Finder Hot Line \'+8801670923581\' ?</string>
+    <string name="hotline_call_heading">Hotline</string>
+    <string name="google_map_v2_key">AIzaSyDofe3hEZeyAi8w9-XgEsNvF0l4JWjimu8</string>
+    <string name="no_call_feature">Sorry! Your device does not support calling feature!</string>
+    <string name="title_activity_home">Inicio</string>
+    <string name="post_business_successful">Business created successfully</string>
+    <string name="dummy_company_name">Audacity IT Solutions Ltd.</string>
+    <string name="dummy_company_contact_number">+88 01670 923581,+88 01680 719142,+88 01534 315711</string>
+    <string name="dummy_company_address">House: 20, Plot No-1/A, J-Block, Baridhara Residential Area (Near The American Center), 1212</string>
+    <string name="dummy_web">www.audacityit.com</string>
+    <string name="dummy_email">founders@audacityit.com</string>
+    <string name="activity_style_raster_title">Custom raster style</string>
+    <!--  ******************************* MAPBOXX ***************************************** -->
+
+    <string name="mapbox" translatable="false">Mapbox</string>
+    <string name="examples">Android examples</string>
+
+    <!-- Access Token -->
+    <string name="access_token" translatable="false">pk.eyJ1IjoibmVzc3dheW5lIiwiYSI6ImNpeXM1dTRsOTAwMDIydnBkZmxpMmU3dWcifQ.-79lzNUFR4sNzw4COu_g_Q</string>
+
+    <!-- UI Strings -->
+    <string name="info_dialog_title">Getting started</string>
+    <string name="info_dialog_description">Do you like this library? Learn how to include it in your app!</string>
+
+    <string name="description_labs">While other categories in this app present examples doing one specific thing, the lab category combines examples to show the power of the SDK.</string>
+    <string name="description_mas">Mapbox Android Services bundles many of the Mapbox APIs into a single SDK such as directions, geocoding, and many of the other utilities offered.</string>
+    <string name="description_query">Examples here show how to query the map data to obtain information such as a features geometry or properties.</string>
+    <string name="title_activity__inicio">Activity_Inicio</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

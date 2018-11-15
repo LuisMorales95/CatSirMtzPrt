@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_signin_btn_light_text_pressed"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/Fr_DView_Guardar"
+            style="@style/btnDeepSelectionGreen"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/check_mark_tick_correct_approve_button_ok"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=" Guardar"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DView_ClCatastral"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ncl" />
+
+
+        <TextView
+            android:id="@+id/ncl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Clave Catastral: "
+            android:textColor="@color/address_text_color"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DView_Guardar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Genre -->
+        <TextView
+            android:id="@+id/Fr_DView_ClCatastral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/genre"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/Fr_DView_Refresh"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DView_Guardar"
+            app:layout_constraintTop_toBottomOf="@+id/ncl" />
+
+
+        <TextView
+            android:id="@+id/Fr_DView_Refresh"
+            style="@style/btnDeepSelection"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@drawable/if_refreshhh60"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DView_ClCatastral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ncl" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_ClCatastral" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <ImageView
+            android:id="@+id/Fr_DView_ImFoto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/list_divider"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view3" />
+
+        <ImageView
+            android:id="@+id/Fr_DView_ImCroquis"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/list_divider"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/view3" />
+
+        <ImageView
+            android:id="@+id/Fr_DView_TomarFoto"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableLeft="@drawable/cam_32_111002grey"
+            android:elevation="1dp"
+            android:gravity="center_vertical|fill_vertical"
+            android:singleLine="true"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DView_Gallery"
+            app:layout_constraintEnd_toStartOf="@+id/view6"
+            app:layout_constraintStart_toStartOf="@+id/Fr_DView_ImFoto"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:srcCompat="@drawable/cam_32_111002grey" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="@+id/Fr_DView_ImFoto"
+            app:layout_constraintStart_toStartOf="@+id/Fr_DView_ImFoto"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_ImFoto" />
+
+        <ImageView
+            android:id="@+id/Fr_DView_Gallery"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DView_Croquis"
+            app:layout_constraintEnd_toEndOf="@+id/Fr_DView_ImFoto"
+            app:layout_constraintStart_toEndOf="@+id/view6"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_ImFoto"
+            app:srcCompat="@drawable/ic_gallery"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/Fr_DView_Croquis"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_TomarFoto"
+            android:drawableLeft="@drawable/if_upload_216485"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text=" Croquis      "
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/Fr_DView_ImCroquis"
+            app:layout_constraintStart_toStartOf="@+id/Fr_DView_ImCroquis"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_Croquis" />
+
+        <TextView
+            android:id="@+id/Fr_DView_GPS"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_Croquis"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/mpp1490298419_8"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text=" GPS"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/Fr_DView_Obs"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/clipboard_pencil_write_track"
+            android:elevation="1dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="Notas"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/Fr_DView_GPS"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/Fr_DView_UsoPredio"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_TomarFoto"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/if_down_menu_arrow_botton_2203524"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text=" Uso Predio"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DView_GPS"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+        <TextView
+            android:id="@+id/btnSignUp10"
+            style="@style/btnDeepSelection"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_Croquis"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/if_refreshhh"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DView_UsoPredio"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_GPS" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_GPS" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_GPS" />
+
+        <TextView
+            android:id="@+id/Fr_DView_NuevoLev"
+            style="@style/btnDeepSelectionBlue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_Croquis"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/document_text_add"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text=" Nuevo Levantamiento"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/Fr_DView_Calculo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+        <TextView
+            android:id="@+id/Fr_DView_Calculo"
+            style="@style/btnDeepSelectionRed"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Fr_DView_Croquis"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@drawable/calculatorwt60"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DView_NuevoLev"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Fr_DView_NuevoLev" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DView_NuevoLev" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/gray_color"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:elevation="0dp"
+            android:fadeScrollbars="false"
+            android:listSelector="@drawable/list_row_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background"
+    android:clickable="true"
+    android:padding="@dimen/value_5dp">
+
+    <ImageView
+        android:id="@+id/imageViewFilterIcon"
+        android:layout_margin="@dimen/value_5dp"
+        android:padding="@dimen/value_5dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:visibility="visible"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewFilterIcon"
+        android:layout_alignTop="@id/imageViewFilterIcon"
+        android:layout_toRightOf="@+id/imageViewFilterIcon"
+        android:gravity="center_vertical"
+        android:text="Predios"
+        android:textColor="@color/location_text_color"
+        android:textSize="@dimen/value_18sp"
+        android:id="@+id/tv1"
+        android:textStyle="normal|bold"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewFilterIcon0"
+        android:layout_margin="@dimen/value_5dp"
+        android:padding="@dimen/value_5dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:visibility="gone"
+        android:layout_below="@+id/buttonApply"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewFilterIcon"
+        android:gravity="center_vertical"
+        android:text="Levantamiento"
+        android:textColor="@color/location_text_color"
+        android:textSize="@dimen/value_18sp"
+        android:layout_below="@+id/buttonApply"
+        android:id="@+id/tv2"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:textStyle="normal|bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewFilterIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="City"
+            android:textColor="@color/city_area_text_color"
+            android:textSize="@dimen/value_18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutCity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Area"
+            android:textColor="@color/city_area_text_color"
+            android:textSize="@dimen/value_18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonApply"
+        android:layout_width="match_parent"
+        style="@style/btnDeepSelectionBlack"
+        android:text="Sincronizar"
+        android:textSize="17sp"
+        android:textColor="@color/bright_foreground_material_dark"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageViewFilterIcon"
+        android:layout_alignLeft="@+id/buttonApply0"
+        android:layout_alignStart="@+id/buttonApply0"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/buttonApply0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/btnDeepSelection"
+        android:text="Enviar "
+        android:textSize="17sp"
+        android:textColor="@color/bright_foreground_material_dark"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/imageViewFilterIcon0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/value_5dp"
+        android:visibility="gone" />
+
+    <View android:id="@+id/rxs" android:background="@color/common_action_bar_splitter" android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/buttonApply"
+        android:layout_marginTop="7.5dip"
+        android:layout_height="1dp" />
+
+</RelativeLayout>

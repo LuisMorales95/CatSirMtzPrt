@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Mezda.Catastro.fragment.SetMapQR">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+    <Button
+        android:id="@+id/select_location_buttonf"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_semi_transparent"
+        android:text="Asignar Ubicacion"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_height="70dp" />
+
+    <ImageButton
+        android:id="@+id/gps_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/value_5dp"
+        android:background="@drawable/bs_list_selector"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/select_location_buttonf"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_color">#64BF4F</color>
+    <color name="green_color_2">#65BF50</color>
+    <color name="green_color_3">#469c32</color>
+    <color name="text_color_1">#ffffff</color>
+    <color name="text_color_2">#65BF50</color>
+    <color name="bar_color">#8a9689</color>
+    <color name="hint_color_green">#65BF50</color>
+
+    <color name="bl1">#298eaf</color>
+    <color name="bl2">#17628e</color>
+
+    <color name="navigation_background">#fdfcfd</color>
+    <color name="green_color_transparent">#3D6F4C</color>
+    <color name="green_navigation_text_color">#1e9965</color>
+    <color name="green_text_color">#05B859</color>
+    <color name="black_text_color">#404040</color>
+    <color name="greenish">#B8D9BE</color>
+    <color name="greenish_transparent">#50B8D9BE</color>
+    <color name="green_bar_light_color">#00aa47</color>
+    <color name="transparent_white">#155e88</color>
+    <color name="gray_color">#f0f0f0</color>
+    <color name="result_list_background_color">#E2E2E2</color>
+    <color name="address_text_color">#686868</color>
+    <color name="nav_list_text_color_1">#000000</color>
+    <color name="nav_list_text_color_2">#777777</color>
+    <color name="edit_text_inactive_color">#3D615A</color>
+    <color name="post_business_bg_color">#EEEDEE</color>
+    <color name="post_business_edit_text_color">#75767A</color>
+    <color name="post_business_bar_color">#C9D8C3</color>
+    <color name="search_filter_bg">#f1f1f1</color>
+    <color name="location_text_color">#585858</color>
+    <color name="city_area_text_color">#9b9b9b</color>
+    <color name="detail_view_background_color">#F4F4F4</color>
+    <color name="detail_view_option_button_stroke_color">#80F0F0F0</color>
+    <color name="detail_view_separator_bar_color">#E4E4E4</color>
+    <color name="dialog_bg_color">#E3E3E3</color>
+    <color name="dialog_separator_color">#BDBDBD</color>
+    <color name="map_polyline_color">#0386bf</color>
+    <color name="map_polyline_ctr">#034e6e</color>
+    <color name="map_info_bg">#50F8F8F8</color>
+    <color name="red_color">#ca2929</color>
+    <color name="red_colorz">#8b0101</color>
+    <color name="map_info_text_color">#595959</color>
+    <color name="verification_activity_bg_color">#FFFFFF</color>
+    <color name="comment_text_color">#89939B</color>
+    <color name="filter_background_shadow_color">#44000000</color>
+    <color name="status_bar_color">#469c32</color>
+
+
+    <color name="gray">#777777</color>
+    <color name="light_gray">#50c2c2c2</color>
+    <color name="black_semi_transparent">#2e2e2e</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+
+    <color name="materialDarkGrey">#dfdfdf</color>
+    <color name="cb_vpa_enter_vpa">#9b9b9b</color>
+    <color name="white">@android:color/white</color>
+    <color name="blue_button">#0880ac</color>
+
+    <color name="colorPrimary">@color/mapboxBlue</color>
+    <color name="colorAccent">@color/mapboxNavy</color>
+    <color name="mapboxBlue">#b33a88af</color>>
+    <color name="mapboxNavy">#1b6999</color>
+    <color name="mapboxRed">#E55E5E</color>
+</resources>

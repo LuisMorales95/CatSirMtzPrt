@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_signin_btn_light_text_pressed"
+    android:scrollbars="none">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/Fr_DVQR_Salir"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:padding="@dimen/value_10dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arr_left" />
+
+        <TextView
+            android:id="@+id/Fr_DVQR_Title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="Rezago Temporal"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DVQR_ImBar"
+            app:layout_constraintEnd_toStartOf="@+id/Fr_DVQR_ImBar"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DVQR_Salir"
+            app:layout_constraintTop_toTopOf="@+id/Fr_DVQR_Salir" />
+
+        <ImageView
+            android:id="@+id/Fr_DVQR_ImBar"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:padding="@dimen/value_10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/clipboard_pencil" />
+
+
+        <View
+            android:id="@+id/vr2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/genre"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DVQR_Title" />
+
+        <TextView
+            android:id="@+id/ncl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Clave Catastral: "
+            android:textColor="@color/address_text_color"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DVQR_Salir" />
+
+        <TextView
+            android:id="@+id/clvcct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/genre"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ncl" />
+
+
+        <View
+            android:id="@+id/vr1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/genre"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clvcct" />
+
+        <ImageView
+            android:id="@+id/Fr_DVQR_ImFoto"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/materialDarkGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vr1" />
+
+        <ImageView
+            android:id="@+id/Fr_DVQR_TomarFoto"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:elevation="1dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="@dimen/value_5dp"
+            app:layout_constraintEnd_toStartOf="@+id/vr"
+            app:layout_constraintStart_toStartOf="@+id/Fr_DVQR_ImFoto"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DVQR_ImFoto"
+            app:srcCompat="@drawable/cam_32_111002grey" />
+
+        <View
+            android:id="@+id/vr"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/genre"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DVQR_TomarFoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Fr_DVQR_TomarFoto" />
+
+        <ImageView
+            android:id="@+id/Fr_DVQR_Gallery"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="1dp"
+            android:gravity="center_vertical|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/vr"
+            app:layout_constraintEnd_toEndOf="@+id/Fr_DVQR_ImFoto"
+            app:layout_constraintStart_toEndOf="@+id/vr"
+            app:layout_constraintTop_toTopOf="@+id/vr"
+            app:srcCompat="@drawable/ic_gallery" />
+
+        <TextView
+            android:id="@+id/Fr_DVQR_GPS"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/mpp1490298419_8"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="@dimen/value_5dp"
+            android:text=" GPS"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/Fr_DVQR_TomarFoto"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DVQR_TomarFoto" />
+
+        <TextView
+            android:id="@+id/Fr_DVQR_Observacion"
+            style="@style/btnDeepSelectionBlack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/clipboard_pencil_write_track"
+            android:elevation="1dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=" Observación"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DVQR_GPS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/Fr_DVQR_GPS"
+            app:layout_constraintTop_toTopOf="@+id/Fr_DVQR_GPS" />
+
+
+        <TextView
+            android:id="@+id/Fr_DVQR_Guardar"
+            style="@style/btnDeepSelectionGreen"
+            android:layout_height="0dp"
+            android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/check_mark_tick_correct_approve_button_ok"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=" Guardar"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Fr_DVQR_Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Fr_DVQR_Cancelar" />
+
+        <TextView
+            android:id="@+id/Fr_DVQR_Cancelar"
+            style="@style/btnDeepSelectionRed"
+            android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=" Cancelar"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fr_DVQR_Observacion" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

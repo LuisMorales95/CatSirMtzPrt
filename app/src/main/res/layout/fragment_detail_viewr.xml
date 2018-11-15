@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_signin_btn_light_text_pressed"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights"
+            style="@style/Bottom.ListItem"
+            android:background="@drawable/btn_bg_fill_selection_white_stroke"
+            android:id="@+id/idver">
+
+            <TextView
+                android:id="@+id/btnSignUp8"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionGreen"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/check_mark_tick_correct_approve_button_ok"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="visible"
+                android:text=" Guardar"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:layout_marginTop="@dimen/value_10dp"
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights"
+                android:background="@drawable/btn_bg_fill_selection_white_stroke"
+                android:id="@+id/idverzion"
+                android:layout_marginLeft="@dimen/value_30dp"
+                android:layout_width="320dp">
+
+                <TextView
+                    android:id="@+id/ncl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clave Catastral: "
+                    android:textColor="@color/address_text_color"
+                    android:textSize="24sp"
+                    android:visibility="visible"
+                    android:textStyle="normal|bold" />
+
+                <!-- Genre -->
+                <TextView
+                    android:id="@+id/clvcct"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/genre"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:visibility="visible" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnSignUp9"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelection"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/if_refreshhh60"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/value_10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/genre"
+            android:layout_below="@+id/idver"
+            android:visibility="visible"
+            android:layout_height="0.5dp" />
+
+        <RelativeLayout
+            android:id="@+id/headingView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_view_image_parent_height"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/value_5dp"
+            android:paddingRight="@dimen/value_5dp"
+            android:paddingTop="@dimen/value_5dp"
+            android:layout_marginTop="84dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/detailHeadingImageViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_view_image_height"
+                android:background="@android:color/background_dark" />
+
+            <ImageView
+                android:id="@+id/prevImgView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/detailHeadingImageViewPager"
+                android:layout_alignLeft="@+id/detailHeadingImageViewPager"
+                android:layout_alignTop="@+id/detailHeadingImageViewPager"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:src="@drawable/ic_arrow_left"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/nextImgView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/detailHeadingImageViewPager"
+                android:layout_alignRight="@+id/detailHeadingImageViewPager"
+                android:layout_alignTop="@+id/detailHeadingImageViewPager"
+                android:layout_marginRight="@dimen/value_10dp"
+                android:src="@drawable/ic_arrow_right" />
+
+
+            <ImageView
+                android:id="@+id/verificationImgView"
+                android:layout_width="@dimen/verificationHeightWidth"
+                android:layout_height="@dimen/verificationHeightWidth"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/value_3dp"
+                android:src="@drawable/ic_verification"
+                android:visibility="invisible" />
+
+            <!-- Genre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights"
+                android:background="@drawable/btn_bg_fill_selection_white_stroke"
+                android:id="@+id/idverzion"
+                android:layout_below="@+id/detailHeadingImageViewPager"
+                android:layout_marginLeft="@dimen/value_20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/ds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="U. Predio: "
+                    android:textColor="@color/address_text_color"
+                    android:textSize="24sp"
+                    android:visibility="visible"
+                    android:textStyle="normal|bold"
+                    android:layout_marginTop="@dimen/value_5dp"
+                    android:elevation="0dp" />
+
+                <!-- Genre -->
+                <TextView
+                    android:id="@+id/dsup"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/genre"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/genre"
+            android:layout_height="2dp"
+            android:layout_below="@+id/headingView"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/infoView"
+            android:layout_width="match_parent"
+            android:layout_below="@id/headingView"
+            android:layout_marginLeft="@dimen/value_30dp"
+            android:layout_marginRight="@dimen/value_30dp"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/HomeBtnGPS"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionBlack"
+                android:text=" Tomar Foto "
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/cam_32_111002grey"
+                android:layout_marginRight="@dimen/value_15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/HomeBtnNotificacionDiferencia"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionBlack"
+                android:text=" Croquis      "
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnGPS"
+                android:textSize="24sp"
+                android:layout_marginRight="@dimen/value_15dp"
+                android:drawableLeft="@drawable/if_upload_216485"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/HomeBtnNuevoQR"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionBlack"
+                android:text=" GPS"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/mpp1490298419_8"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoView0"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/infoView"
+            android:layout_marginBottom="@dimen/value_20dp"
+            android:layout_marginLeft="@dimen/value_30dp"
+            android:layout_marginRight="@dimen/value_30dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/HomeBtnListaTemporal"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionBlack"
+                android:text=" Observacion"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/clipboard_pencil_write_track"
+                android:layout_marginRight="@dimen/value_15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/btnSignUp5"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelectionBlack"
+                android:text=" Uso Predio"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnGPS"
+                android:textSize="24sp"
+                android:layout_marginRight="@dimen/value_15dp"
+                android:drawableLeft="@drawable/if_down_menu_arrow_botton_2203524"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/btnSignUp10"
+                android:layout_height="wrap_content"
+                style="@style/btnDeepSelection"
+                android:layout_marginBottom="@dimen/value_20dp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                android:textSize="24sp"
+                android:drawableLeft="@drawable/if_refreshhh"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/infoView0"
+            android:background="@color/detail_view_separator_bar_color"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/buttonPayWithOtherCard"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_below="@+id/separator"
+            android:background="@drawable/btn_bg_fill_selection_idle_white_stroke"
+            android:visibility="visible">
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/genre"
+                android:layout_height="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                tools:ignore="NestedWeights"
+                style="@style/Bottom.ListItem"
+                android:background="@drawable/btn_bg_fill_selection_white_stroke"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/btnSignUp7"
+                    android:layout_height="wrap_content"
+                    style="@style/btnDeepSelectionBlue"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                    android:textSize="24sp"
+                    android:drawableLeft="@drawable/document_text_add"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:visibility="visible"
+                    android:text=" Nuevo Levantamiento"
+                    android:layout_marginBottom="@dimen/value_10dp"
+                    android:layout_marginTop="@dimen/value_10dp" />
+
+                <TextView
+                    android:id="@+id/HomeBtnLevantamientoCampo"
+                    android:layout_height="wrap_content"
+                    style="@style/btnDeepSelectionRed"
+                    android:layout_marginBottom="@dimen/value_10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_alignRight="@+id/HomeBtnNotificacionDiferencia"
+                    android:textSize="24sp"
+                    android:drawableLeft="@drawable/calculatorwt60"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/value_10dp"
+                    android:layout_marginLeft="@dimen/value_10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/genre"
+                android:layout_height="2dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/buttonPayWithOtherCard"
+            android:layout_height="280dp">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1dp"
+                android:fadeScrollbars="false"
+                android:listSelector="@drawable/list_row_selector"
+                android:elevation="0dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

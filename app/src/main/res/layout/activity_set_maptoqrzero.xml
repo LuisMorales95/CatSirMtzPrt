@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Mezda.Catastro.fragment.SetMapQR">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/mrz">
+
+
+            <ImageView
+                android:id="@+id/crossImgView"
+                android:clickable="true"
+                android:visibility="visible"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/arr_left"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/btnForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:maxLines="2"
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentTop="false"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="Busqueda de Ubicacion" />
+
+            <ImageView
+                android:id="@+id/regImgView"
+                android:clickable="true"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mappw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+
+        </RelativeLayout>
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <ImageButton
+        android:id="@+id/gps_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/value_5dp"
+        android:background="@drawable/bs_list_selector"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/select_location_buttonf"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/select_location_buttonf"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_semi_transparent"
+        android:text="Asignar Ubicacion"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_height="70dp" />
+
+
+
+</RelativeLayout>
